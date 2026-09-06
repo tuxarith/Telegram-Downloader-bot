@@ -26,7 +26,7 @@
 
 ### 1. Clone project
 ```
-git clone 
+git clone https://github.com/tuxarith/Telegram-Downloader-bot.git
 ```
 ### 2. Go to the directory
 ```
