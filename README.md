@@ -26,11 +26,11 @@
 
 ### 1. Clone project
 ```
-git clone
+git clone 
 ```
 ### 2. Go to the directory
 ```
-cd bemburmalda
+cd Telegram-Downloader-bot
 ```
 ### 3. Create file in the project root
 ### file example_token-bot.env - this is a example for file token-bot.env!!!
