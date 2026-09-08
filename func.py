@@ -10,34 +10,6 @@ from be1 import download_tiktok_photo
 
 
 
-def get_format(info, target_height):
-    formats = info.get("formats", [])
-
-    video_formats = [
-        f for f in formats
-        if f.get("vcodec") not in (None, "none")
-        and f.get("height")
-    ]
-
-    if not video_formats:
-        return "best"
-
-
-    exact = [
-        f for f in video_formats
-        if f["height"] == target_height
-    ]
-
-    if exact:
-        return exact[-1]["format_id"]
-
-
-    video_formats.sort(
-        key=lambda f: abs(f["height"] - target_height)
-    )
-
-    return video_formats[0]["format_id"]
-
 
 
 
